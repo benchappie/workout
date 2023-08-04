@@ -1,4 +1,4 @@
-"""do data analysis stuff with workout info, eventually based on user desires"""
+"""do data analysis stuff with workout info, eventually based on user desires; CURRENTLY PRINTS BASIC CHARTS OF DATES WHERE A WORKOUT OCCURED"""
 
 import pandas as pd
 import matplotlib.pyplot as plt
