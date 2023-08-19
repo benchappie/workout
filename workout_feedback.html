@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Data</title>
+    <style>
+        section {
+            text-align: center; 
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 450px;
+            margin: auto;
+        }
+
+        form > div {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0px;
+            text-align: left;
+        }
+        
+        form > div > input, form > div > select {
+            padding: 10px;
+        }
+
+        form > button {
+            padding: 10px 25px;
+            font-size: 15.5px;
+            background-color: #fff;
+            border: 2px solid #233;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header><h1>Enter Info Here for Each Set</h1></header>
+        <form action="/" method="post">
+            <div>
+                <label for="date">Date</label>
+                <input type="text" name="date" id="date">
+            </div>
+            <div>
+                <label for="exercise">Exercise</label>
+                <input type="text" name="exercise" id="exercise">
+            </div>
+            <div>
+                <label for="reps">Reps</label>
+                <input type="text" name="reps" id="reps">
+            </div>
+            <div>
+                <label for="weight">Weight</label>
+                <input type="text" name="weight" id="weight">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section>
+        <br><br>
+        <header><h1>Load History of Sets</h1></header>
+        <button type="button" onclick="window.location.href='http://localhost:7780/table'">Click Here</button>
+        <br><br>
+    </section>
+</body>
+</html>
