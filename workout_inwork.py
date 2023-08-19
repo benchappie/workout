@@ -3,13 +3,14 @@ import wsgiref.simple_server
 import mysql.connector
 import urllib.parse
 from tabulate import tabulate 
-from decouple import config
-from dotenv import load_dotenv
+#from decouple import config
+#from dotenv import load_dotenv
+from getpass import getpass
 
 # .env variable for DB credentials
-load_dotenv()
-USER = config('USER')
-PASS = config('KEY')     
+# load_dotenv('workout')
+USER = input('Root: ')
+PASS = getpass('Password: ')     
 
 # list of all submissions
 forms_data = []  
